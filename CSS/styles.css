@@ -68,9 +68,6 @@ p {
 .menu-item:not(:last-child) {
   margin-right: 50px;
 }
-.header .cnt {
-  margin-right: 50px;
-}
 
 .menu-link {
   font-weight: 500;
@@ -350,6 +347,8 @@ address {
   margin: 20px 24px;
 }
 .contacts {
+  display: flex;
+  align-items: center;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -357,7 +356,37 @@ address {
   letter-spacing: 0.02em;
 }
 
+.contact-item:not(:last-child) {
+  margin-right: 30px;
+}
+.cnt-item-svg-mail {
+  height: 12px;
+  width: 16px;
+  margin-right: 10px;
+  color: var(--main-text-cl);
+}
+.cnt-item-svg-tel {
+  height: 16px;
+  width: 10px;
+  margin-right: 10px;
+  color: var(--main-text-cl);
+}
+
+.contact-item {
+  align-items: center;
+}
+
 .mail-tele-address {
   color: var(--rgba);
   margin-top: 9px;
+}
+
+.contacts:hover .cnt-item-svg-mail,
+.contacts:focus .cnt-item-svg-mail {
+  fill: var(--accent-cl);
+}
+
+.contacts:hover .cnt-item-svg-tel,
+.contacts:focus .cnt-item-svg-tel {
+  fill: var(--accent-cl);
 }
