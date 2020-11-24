@@ -448,3 +448,48 @@ address {
 .contacts:focus .cnt-item-svg-tel {
   fill: var(--accent-cl);
 }
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client-icons {
+  display: flex;
+  margin-top: 50px;
+}
+
+.client-icon-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+}
+
+.client-icon-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-icon-svg {
+  fill: var(--icons-color);
+}
+.client-icon-item:hover .client-icon-svg {
+  fill: var(--accent-cl);
+}
+.client-icon-item:hover {
+  border: 1px solid var(--accent-cl);
+}
+
+.footer .social-icons {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  width: 206px;
+}
