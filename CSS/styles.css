@@ -141,7 +141,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--gray-bg);
-  background-image: url(../images/bg-hero.jpg);
+  background-image: radial-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/bg-hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -372,6 +372,10 @@ address {
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
+}
+
+.samples-items:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .samples-items:nth-child(3n) {
